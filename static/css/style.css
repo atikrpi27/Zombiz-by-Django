@@ -71,6 +71,7 @@ html,body{
 .header{
 	padding-top:20px;
 	padding-bottom: 12px;
+	background-color: #fff;
 }
 
 .header li  a{

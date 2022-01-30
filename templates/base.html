@@ -14,7 +14,7 @@
 	<!-- TITLE OF SITE -->
 	<title>
 		{% block title %}
-
+			
 		{% endblock %}
 	</title>
 	<!-- for title img -->
@@ -63,11 +63,11 @@
 			<div class="header-right pull-right">
 				<ul>
 					<li class="reg">
-						<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
+						<a href="{% url 'reg' %}" data-toggle="modal" data-target=".bs-example-modal-sm">
 							Register
 						</a>
 						/
-						<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
+						<a href="{% url 'login' %}" data-toggle="modal" data-target=".bs-example-modal-lg">
 							Log in
 						</a>
 
