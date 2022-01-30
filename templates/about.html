@@ -1,0 +1,448 @@
+{% extends "base.html" %}
+
+	{% block title %}
+		Zombiz -About
+	{% endblock %}
+
+	{% block body_block %}	
+		{% load static %}
+
+		<!--about-part start-->
+		<section class="about-part" style="background-image: url({% static 'images/about/about-banner.jpg' %});">
+			<div class="container">
+				<div class="about-part-details text-center"> 
+					<h2>about us</h2>
+					<div class="about-part-content">
+						<div class="breadcrumbs">
+							<div class="container">
+								<ol class="breadcrumb">
+								  <li><a href="{% url 'home' %}">home</a><span>//</span></li>
+								  <li><a href="{% url 'about' %}">about</a></li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+		<!--about-history start-->
+		<div class="about-history">
+			<div class="container">
+				<div class="about-history-content">
+					<div class="row">
+						<div class="col-md-5 col-sm-12">
+							<div class="single-about-history">
+								<div class="about-history-img">
+									<img src="{% static 'images/about/ab1.jpg' %}" alt="about">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-offset-1 col-md-6 col-sm-12">
+							<div class="single-about-history">
+								<div class="about-history-txt">
+									<h2>our history</h2>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adiping elit, sed do eiusmod tempor incidd ut labore rhei  et dolore magna aliqua. Ut enim ad  veniam, quis laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in repre voluptate in the velit esse.
+									</p>
+									<div class="main-timeline">
+										<div class="row">
+											<div class="col-md-2 col-sm-2">
+												<div class="experience-time">
+													<h3>2002</h3>
+												</div>
+											</div>
+											<div class="col-md-10 col-sm-10">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+														<ul class="description">
+															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-2 col-sm-2">
+												<div class="experience-time">
+													<h3>2007</h3>
+												</div>
+											</div>
+											<div class="col-md-10 col-sm-10">
+												<div class="timeline">
+													
+													<div class="timeline-content">
+														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+														
+														<ul class="description">
+															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-2 col-sm-2">
+												<div class="experience-time">
+													<h3>2012</h3>
+												</div>
+											</div>
+											<div class="col-md-10 col-sm-10">
+												<div class="timeline">
+													
+													<div class="timeline-content">
+														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+														
+														<ul class="description">
+															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
+
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="row">
+											<div class="col-md-2 col-sm-2">
+												<div class="experience-time">
+													<h3>2016</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-10 col-sm-10">
+												<div class="timeline">
+													
+													<div class="timeline-content">
+														<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+														
+														<ul class="description">
+															<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="about-vission-content">
+							<div class="col-md-6 col-sm-12">
+								<div class="single-about-history">
+									<div class="about-history-txt">
+										<h2>vision and mission</h2>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adiping elit, sed do eiusmod tempor incidd ut labore rhei  et dolore magna aliqua. Ut enim ad  veniam, quis laboris nisi ut aliquip ex ea commodo. Duis aute irure dolor in repre voluptate in the velit esse.
+										</p>
+										<div class="main-timeline  xtra-timeline">
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="timeline timeline-ml-20">	
+														<div class="timeline-content">
+															<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+															<ul class="description">
+																<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="timeline timeline-ml-20">				
+														<div class="timeline-content">
+															<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+															
+															<ul class="description">
+																<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-sm-12">
+													<div class="timeline timeline-ml-20">
+														<div class="timeline-content">
+															<h4 class="title"> <span><i class="fa fa-circle-o" aria-hidden="true"></i></span></h4>
+															
+															<ul class="description">
+																<li>Duis aute irure dolor in reprehenderit in the voluptate velit esse cillum dolore eu ugiat nulla pariatur cupiat non proident.</li>
+
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-offset-1 col-md-5 col-sm-12">
+								<div class="single-about-history">
+									<div class="about-history-img">
+										<img src="{% static 'images/about/ab2.jpg' %}" alt="about">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--statistics start-->
+		<section  class="statistics" style= "background-image: url({% static 'images/counter/counter-banner.jpg' %})">
+			<div class="container">
+				<div class="statistics-counter "> 
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<div class="statistics-img">
+								<img src="{% static 'images/counter/counter1.png' %}" alt="counter-icon" />
+							</div>
+							<div class="statistics-content">
+								<div class="counter">2556</div>
+								<h3>days worked</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<div class="statistics-img">
+								<img src="{% static 'images/counter/counter2.png'%}" alt="counter-icon" />
+							</div>
+							<div class="statistics-content">
+								<div class="counter">326</div>
+								<h3>project finished</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<div class="statistics-img">
+								<img src="{% static 'images/counter/counter3.png' %}" alt="counter-icon" />
+							</div>
+							<div class="statistics-content">
+								<div class="counter">1526</div>
+								<h3>coffee cup</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<div class="single-ststistics-box">
+							<div class="statistics-img">
+								<img src="{% static 'images/counter/counter4.png' %}" alt="counter-icon" />
+							</div>
+							<div class="statistics-content">
+								<div class="counter">856</div>
+								<h3>client satisfied</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--we-do start -->
+		<section  class="we-do">
+			<div class="container">
+				<div class="we-do-details">
+					<div class="section-header text-center">
+						<h2>what we do</h2>
+						<p>
+							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</p>
+					</div>
+					<div class="we-do-carousel">
+						<div class="row">
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-img">
+												<img src="{% static 'images/home/consultency.png' %}" alt="image of consultency" />
+											</div>
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														Business Consultancy
+													</a>
+												</h2>
+											</div>
+										</div>
+										<div class="we-do-comment">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-img">
+												<img src="{% static 'images/home/busisness_grow.png' %}" alt="image of business" />
+											</div>
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														help to grow Business
+													</a>
+												</h2>
+											</div>
+										</div>
+										<div class="we-do-comment">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 col-xs-12">
+								<div class="single-we-do-box text-center">
+									<div class="we-do-description">
+										<div class="we-do-info">
+											<div class="we-do-img">
+												<img src="{% static 'images/home/support-logo.png' %}" alt="image of support" />
+											</div>
+											<div class="we-do-topics">
+												<h2>
+													<a href="#">
+														great support
+													</a>
+												</h2>
+											</div>
+										</div>
+										<div class="we-do-comment">
+											<p>
+												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ul.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- testemonial Start -->
+		<section   class="testemonial">
+			<div class="container">
+				<div class="section-header text-center">
+					<h2>
+						<span>
+							what our client say about us
+						</span>
+					</h2>
+				</div>
+				<div class="owl-carousel owl-theme" id="testemonial-carousel">
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'images/client/testimonial1.jpg' %}" alt="img"/>
+							</div>
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+								</p>
+								<h3>
+									<a href="#">
+										kevin watson
+									</a>
+								</h3>
+								<h4>CEO, Kingston</h4>
+							</div>	
+						</div>
+					</div>
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'images/client/testimonial2.jpg' %}" alt="img"/>
+							</div>
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+								</p>
+								<h3>
+									<a href="#">
+										kevin watson
+									</a>
+								</h3>
+								<h4>CEO, Kingston</h4>
+							</div>	
+						</div>
+					</div>
+					<div class="home1-testm item">
+						<div class="home1-testm-single text-center">
+							<div class="home1-testm-img">
+								<img src="{% static 'images/client/testimonial1.jpg' %}" alt="img"/>
+							</div>
+							<div class="home1-testm-txt">
+								<span class="icon section-icon">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+								</span>
+								<p>
+									Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam..
+								</p>
+								<h3>
+									<a href="#">
+										kevin watson
+									</a>
+								</h3>
+								<h4>CEO, Kingston</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- new-project start -->
+		<section  class="new-project">
+				<div class="container">
+					<div class="new-project-details">
+						<div class="row">
+							<div class="col-md-10 col-sm-8">
+								<div class="single-new-project">
+									<h3>
+										Want to start a new project with us? Let’s Start!
+									</h3>
+								</div>	
+							</div>
+							<div class="col-md-2 col-sm-4">
+								<div class="single-new-project">
+									<a href="#" class="slide-btn">
+										start now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+		
+
+
+
+
+
+		{% endblock %}
