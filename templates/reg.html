@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title%}
+	Zombiz -Registation
+{% endblock %}
+{% block body_block %}
+{% load static %}
+<head>
+<!--======= Font =======-->
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/login_fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'fonts/login_fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+
+<!--======= Vendor =======-->
+	<link rel="stylesheet" type="text/css" href="{% static 'login_vendor/animate/animate.css' %}">	
+	<link rel="stylesheet" type="text/css" href="{% static 'login_vendor/css-hamburgers/hamburgers.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'login_vendor/animsition/css/animsition.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'login_vendor/select2/select2.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'login_vendor/daterangepicker/daterangepicker.css' %}">
+
+<!--======= CSS =======-->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.main.css' %}">
+</head>	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-43">
+						<h3>Create Your Account</h3>
+					</span>					
+					
+					<div class="wrap-input50 validate-input" >
+						<input class="input50" type="text" name="fname">
+						<span class="focus-input50"></span>
+						<span class="label-input50">First Name</span>
+					</div>					
+					
+					<div class="wrap-input50 validate-input">
+						<input class="input50" type="text" name="lname">
+						<span class="focus-input50"></span>
+						<span class="label-input50">Last Name</span>
+					</div>	
+
+					<div class="wrap-input50 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input50" type="text" name="email">
+						<span class="focus-input50"></span>
+						<span class="label-input50">Email</span>
+					</div>					
+					
+					<div class="wrap-input50 validate-input">
+						<input class="input50" type="number" name="phone">
+						<span class="focus-input50"></span>
+						<span class="label-input50">Phone</span>
+					</div>	
+
+					<div class="wrap-input50 validate-input" data-validate="Password is required">
+						<input class="input50" type="password" name="pass">
+						<span class="focus-input50"></span>
+						<span class="label-input50">Password</span>
+					</div>	
+
+					<div class="wrap-input50 validate-input" data-validate="Password is required">
+						<input class="input50" type="password" name="c_pass">
+						<span class="focus-input50"></span>
+						<span class="label-input50">Confirm Password</span>
+					</div>			
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Register
+						</button>
+					</div>
+					
+					<div class="text-center p-t-26 p-b-20">
+						<span class="txt2">
+							or Signup using
+						</span>
+					</div>
+
+					<div class="login100-form-social flex-c-m">
+						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+							<i class="fa fa-facebook-f" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</div>
+					<div class="text-center p-t-20 p-b-20">
+						<span class="txt2">
+							If you have already registered <a href="{% url 'login' %}">LOGIN HERE</a>
+						</span>
+					</div>
+				</form>
+
+				<div class="login100-more" style="background-image: url({% static 'images/reg/reg.png' %});">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<script src="{% static 'vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'vendor/animsition/js/animsition.min.js' %}"></script>
+	<script src="{% static 'vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'vendor/select2/select2.min.js' %}"></script>
+	<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
+	<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
+	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
+	<script src="{% static 'js/login.main.js' %}"></script>
+
+{% endblock %}
