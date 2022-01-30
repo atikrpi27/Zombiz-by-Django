@@ -21,5 +21,8 @@ def team(request):
 def blog(request):
     return render(request,"blog.html")
 
+def blogSingle(request):
+    return render(request,"blog_single.html")
+
 def contact(request):
     return render(request,"contact.html")

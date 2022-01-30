@@ -766,10 +766,6 @@ a:focus.service-btn{
 	padding: 117px 0 109px;
 }
 
-.project-details{
-	
-}
-
 .project-content {
     margin-top:62px;
 }
@@ -1833,7 +1829,7 @@ a:active.learn-btn{
 
 .about-part{
 	position:relative;
-	/* background-image: no-repeat; */
+	background-image: no-repeat;
 	background-position:center;
 	background-size:cover;
 	padding: 124px 0 144px;
