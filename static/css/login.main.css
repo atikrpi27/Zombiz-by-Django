@@ -292,7 +292,7 @@ iframe {
   width: 100%;
   background: transparent;
   font-family: Montserrat-Regular;
-  font-size: 18px;
+  font-size: 17px;
   color: #555555;
   line-height: 1.2;
   padding: 0 26px;
@@ -362,17 +362,17 @@ input.input100 {
 
 
 .input100:focus + .focus-input100 + .label-input100 {
-  top: 14px;
-  font-size: 13px;
+  top: 8px;
+  font-size: 10px;
 }
 
 .has-val {
-  height: 48px !important;
+  height: 40px !important;
 }
 
 .has-val + .focus-input100 + .label-input100 {
-  top: 14px;
-  font-size: 13px;
+  top: 8px;
+  font-size: 10px;
 }
 
 /*========== [ Restyle Checkbox ] ===========*/

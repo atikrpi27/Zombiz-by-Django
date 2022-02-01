@@ -294,7 +294,7 @@ iframe {
   width: 100%;
   background: transparent;
   font-family: Montserrat-Regular;
-  font-size: 18px;
+  font-size: 17px;
   color: #555555;
   line-height: 1.2;
   padding: 0 26px;
@@ -359,21 +359,21 @@ input.input50 {
 }
 
 .input50:focus {
-  height: 68px;
+  height: 48px;
 }
 
 
 .input50:focus + .focus-input50 + .label-input50 {
-  top: 10px;
+  top: 8px;
   font-size: 12px;
 }
 
 .has-val {
-  height: 48px !important;
+  height: 40px !important;
 }
 
 .has-val + .focus-input50 + .label-input50 {
-  top: 10px;
+  top: 8px;
   font-size: 12px;
 }
 
