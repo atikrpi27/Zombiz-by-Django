@@ -20,7 +20,7 @@
 <!--======= CSS =======-->
 	<link rel="stylesheet" href="{% static 'css/style.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.util.css' %}">
-	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.main.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.css' %}">
 </head>	
 	<div class="limiter">
 		<div class="container-login50">
@@ -31,25 +31,47 @@
 						<h3>Create Your Account</h3>
 					</span>					
 					
-					<div class="wrap-input50 validate-input" >
-						<input class="input50" type="text" name="fname">
+					<div class="wrap-input50" >
+						<input class="input50" type="text" name="first_name">
 						<span class="focus-input50"></span>
 						<span class="label-input50 has-val">First Name</span>
 					</div>					
 					
-					<div class="wrap-input50 validate-input">
-						<input class="input50" type="text" name="lname">
+					<div class="wrap-input50">
+						<input class="input50" type="text" name="last_name">
 						<span class="focus-input50"></span>
 						<span class="label-input50">Last Name</span>
-					</div>	
+					</div>
+					
+					<div class="wrap-input50 validate-input" data-validate = "Username is required">
+						<input class="input50" type="text" name="username">
+						<span class="focus-input50"></span>
+						<span class="label-input50">Username</span>
+					</div>
 
 					<div class="wrap-input50 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input50" type="email" name="email">
 						<span class="focus-input50"></span>
 						<span class="label-input50">Email</span>
 					</div>					
-					
-					<div class="wrap-input50 validate-input">
+					 
+					<div class="wrap-input50">
+						<select class="input50 lable-district" name="district">
+							<option value=""></option>
+							<option value="Dhaka">Dhaka</option>
+							<option value="Rajshahi">Rajshahi</option>
+							<option value="Shylet">Shylet</option>
+							<option value="Chittagong">Chittagong</option>
+							<option value="Barishal">Barishal</option>
+							<option value="Khulna">Khulna</option>
+							<option value="Rangpur">Rangpur</option>
+							<option value="Maymansing">Maymansing</option>
+						</select>
+						<span class="focus-input50"></span>
+						<span class="label-input50">Select Your District</span>
+					</div>
+
+					<div class="wrap-input50">
 						<input class="input50" type="number" name="phone">
 						<span class="focus-input50"></span>
 						<span class="label-input50">Phone</span>
@@ -57,6 +79,9 @@
 
 					<div class="wrap-input50 validate-input" data-validate="Password is required">
 						<input class="input50" type="password" name="password">
+						{% for message in messages %}
+						<h4 class="message">{{message}}</h4>
+						{% endfor %}
 						<span class="focus-input50"></span>
 						<span class="label-input50">Password</span>
 					</div>	
@@ -65,7 +90,22 @@
 						<input class="input50" type="password" name="c_password">
 						<span class="focus-input50"></span>
 						<span class="label-input50">Confirm Password</span>
-					</div>			
+					</div>	
+					
+					<div class="gender">
+						<label class="form-check-label" for="radio2">Gander: </label>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" id="radio1" name="gender" value="Male"> Male							
+						</div>
+						
+						<div class="form-check">
+							<input type="radio" class="form-check-input" id="radio2" name="gender" value="Female"> Female							
+						</div>
+
+						<div class="form-check">
+							<input type="radio" class="form-check-input" id="radio2" name="gender" value="Others"> Others							
+						</div>
+					</div>
 
 					<div class="container-login50-form-btn">
 						<button class="login50-form-btn" type="submit">
