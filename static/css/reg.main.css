@@ -178,7 +178,7 @@ iframe {
   margin: 0 auto;
 }
 
-.container-login100 {
+.container-login50 {
   width: 100%;  
   min-height: 100vh;
   display: -webkit-box;
@@ -193,7 +193,7 @@ iframe {
 }
 
 
-.wrap-login100 {
+.wrap-login50 {
   width: 100%;
   background: #fff;
   overflow: hidden;
@@ -208,7 +208,7 @@ iframe {
 
 }
 
-.login100-more {
+.login50-more {
   width: calc(100% - 560px);
   background-repeat: no-repeat;
   background-size: cover;
@@ -217,7 +217,7 @@ iframe {
   z-index: 1;
 }
 
-.login100-more::before {
+.login50-more::before {
   content: "";
   display: block;
   position: absolute;
@@ -231,7 +231,7 @@ iframe {
 
 /*========== [ Form ] ===========*/
 
-.login100-form {
+.login50-form {
   width: 560px;
   min-height: 100vh;
   display: block;
@@ -240,7 +240,7 @@ iframe {
 
 }
 
-.login100-form-title {
+.login50-form-title {
   width: 100%;
   display: block;
   font-family: Poppins-Regular;
@@ -359,12 +359,12 @@ input.input50 {
 }
 
 .input50:focus {
-  height: 48px;
+  height: 68px;
 }
 
 
 .input50:focus + .focus-input50 + .label-input50 {
-  top: 14px;
+  top: 10px;
   font-size: 12px;
 }
 
@@ -372,8 +372,8 @@ input.input50 {
   height: 48px !important;
 }
 
-.has-val + .focus-input50 + .label-input500 {
-  top: 15px;
+.has-val + .focus-input50 + .label-input50 {
+  top: 10px;
   font-size: 12px;
 }
 
@@ -393,7 +393,7 @@ input[type=number] {
 
 /*========== [ Button ] ===========*/
 
-.container-login100-form-btn {
+.container-login50-form-btn {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -405,7 +405,7 @@ input[type=number] {
   padding-top: 20px;
 }
 
-.login100-form-btn {
+.login50-form-btn {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -432,7 +432,7 @@ input[type=number] {
   transition: all 0.4s;
 }
 
-.login100-form-btn:hover {
+.login50-form-btn:hover {
   background: #333333;
 }
 
@@ -440,29 +440,29 @@ input[type=number] {
 /*========== [ Reesponsive ] ===========*/
 
 @media (max-width: 992px) {
-  .login100-form {
+  .login50-form {
     width: 50%;
     padding-left: 30px;
     padding-right: 30px;
   }
 
-  .login100-more {
+  .login50-more {
     width: 50%;
   }
 }
 
 @media (max-width: 768px) {
-  .login100-form {
+  .login50-form {
     width: 100%;
   }
 
-  .login100-more {
+  .login50-more {
     display: none;
   }
 }
 
 @media (max-width: 576px) {
-  .login100-form {
+  .login50-form {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 70px;
@@ -539,7 +539,7 @@ input[type=number] {
 
 /*========== [ Social ] ===========*/
 
-.login100-form-social-item {
+.login50-form-social-item {
   width: 36px;
   height: 36px;
   font-size: 18px;
@@ -547,7 +547,7 @@ input[type=number] {
   border-radius: 50%;
 }
 
-.login100-form-social-item:hover {
+.login50-form-social-item:hover {
   background: #333333;
   color: #fff;
   display: flex;

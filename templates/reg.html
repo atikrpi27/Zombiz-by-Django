@@ -23,10 +23,11 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/reg.main.css' %}">
 </head>	
 	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-43">
+		<div class="container-login50">
+			<div class="wrap-login50">
+				<form class="login50-form validate-form" action="" method="post">
+					{% csrf_token %}
+					<span class="login50-form-title p-b-43">
 						<h3>Create Your Account</h3>
 					</span>					
 					
@@ -43,7 +44,7 @@
 					</div>	
 
 					<div class="wrap-input50 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input50" type="text" name="email">
+						<input class="input50" type="email" name="email">
 						<span class="focus-input50"></span>
 						<span class="label-input50">Email</span>
 					</div>					
@@ -55,19 +56,19 @@
 					</div>	
 
 					<div class="wrap-input50 validate-input" data-validate="Password is required">
-						<input class="input50" type="password" name="pass">
+						<input class="input50" type="password" name="password">
 						<span class="focus-input50"></span>
 						<span class="label-input50">Password</span>
 					</div>	
 
 					<div class="wrap-input50 validate-input" data-validate="Password is required">
-						<input class="input50" type="password" name="c_pass">
+						<input class="input50" type="password" name="c_password">
 						<span class="focus-input50"></span>
 						<span class="label-input50">Confirm Password</span>
 					</div>			
 
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+					<div class="container-login50-form-btn">
+						<button class="login50-form-btn" type="submit">
 							Register
 						</button>
 					</div>
@@ -78,12 +79,12 @@
 						</span>
 					</div>
 
-					<div class="login100-form-social flex-c-m">
-						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+					<div class="login50-form-social flex-c-m">
+						<a href="#" class="login50-form-social-item flex-c-m bg1 m-r-5">
 							<i class="fa fa-facebook-f" aria-hidden="true"></i>
 						</a>
 
-						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+						<a href="#" class="login50-form-social-item flex-c-m bg2 m-r-5">
 							<i class="fa fa-twitter" aria-hidden="true"></i>
 						</a>
 					</div>
@@ -94,7 +95,7 @@
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url({% static 'images/reg/reg.png' %});">
+				<div class="login50-more" style="background-image: url({% static 'images/reg/reg.png' %});">
 				</div>
 			</div>
 		</div>
@@ -108,6 +109,6 @@
 	<script src="{% static 'vendor/daterangepicker/moment.min.js' %}"></script>
 	<script src="{% static 'vendor/daterangepicker/daterangepicker.js' %}"></script>
 	<script src="{% static 'vendor/countdowntime/countdowntime.js' %}"></script>
-	<script src="{% static 'js/login.main.js' %}"></script>
+	<script src="{% static 'js/reg.main.js' %}"></script>
 
 {% endblock %}

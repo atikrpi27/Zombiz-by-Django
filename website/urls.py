@@ -1,11 +1,9 @@
 from django import views
-from django.contrib import admin
 from django.urls import path
 from .import views
 
 apps_name = 'website'
 urlpatterns = [
-    path('admin/', admin.site.urls),
     path('', views.home, name="home"),
     path('about/', views.about, name="about"),
     path('service/', views.service, name="service"),
@@ -14,6 +12,5 @@ urlpatterns = [
     path('blog/', views.blog, name="blog"),
     path('blog-single/', views.blogSingle, name="blogSingle"),
     path('contact/', views.contact, name="contact"),
-    path('registration/', views.reg, name="reg"),
-    path('login/', views.login, name="login"),
+   
 ]

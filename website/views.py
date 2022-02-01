@@ -27,8 +27,3 @@ def blogSingle(request):
 def contact(request):
     return render(request,"contact.html")
 
-def reg(request):
-    return render(request,"reg.html")
-
-def login(request):
-    return render(request,"login.html")
