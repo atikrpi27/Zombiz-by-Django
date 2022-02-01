@@ -314,10 +314,9 @@ iframe {
   padding: 15px;
 }
 
-.message{
+.info_message{
   color: red; 
   font-size: 12px; 
-  text-align: center;
 }
 
 .input50 {
