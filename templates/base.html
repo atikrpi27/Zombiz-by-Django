@@ -63,13 +63,19 @@
 			<div class="header-right pull-right">
 				<ul>
 					<li class="reg">
+						{% if user.is_authenticated %}
+						<a>
+							{{request.user}}
+						</a>
+						{% else %}
 						<a href="{% url 'reg' %}">
-							Register
+							Register {{request.user}}
 						</a>
 						/
 						<a href="{% url 'login' %}">
 							Log in
 						</a>
+						{% endif %}
 
 						<!-- small modal -->
 						<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog"
