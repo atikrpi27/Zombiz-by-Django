@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.shortcuts import redirect, render
 from user.models import Registration
 from django.contrib.auth.models import User
@@ -26,8 +27,8 @@ def reg(request):
             # for save data in database Registration Table from Registration HTML Form.
             reg = Registration(first_name = fname, last_name = lname, username = uname, phone = phone, email = email, district = district, password = password, c_password = c_password, gender = gender)
             reg.save()
-            return redirect('login')          
-        
+            context = {'message1':'Password and confirm password does not match'}
+            return render(request,'login.html', context)          
         else:
             messages.info(request,'Password and confirm password does not match')
             
